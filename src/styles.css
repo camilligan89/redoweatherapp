@@ -28,3 +28,8 @@ li {
   font-weight: 100px;
   line-height: 19px;
 }
+
+.column {
+  float: left;
+  width: 50%;
+}
