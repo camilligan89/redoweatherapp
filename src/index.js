@@ -1,6 +1,6 @@
 function formatDate(timestamp) {
   let date = new Date(timestamp);
-  let hours = timestamp.getHours();
+  let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
   }
@@ -28,7 +28,7 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
-  let iconElement = document.querySelector("icon");
+  let iconElement = document.querySelector("#icon");
 
   fahrenheitTemperature = response.data.main.temp;
 
@@ -40,7 +40,7 @@ function displayTemperature(response) {
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
-    `https://img.icons8.com/${response.data.weather[0].icon}/16/000000/partly-cloudy-day.png`
+    ` http://openweathermap.org/img/wn/10d@2x.png`
   );
 }
 
