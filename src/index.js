@@ -22,7 +22,7 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
-  let tempertureElement = document.querySelector("temperature");
+  let tempertureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
